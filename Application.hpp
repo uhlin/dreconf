@@ -10,4 +10,7 @@ typedef enum {
     LEVEL_CRITICAL
 } priority_level_t;
 
+extern const std::string g_programVersion;
+extern const std::string g_programAuthor;
+
 #endif
