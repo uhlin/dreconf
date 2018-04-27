@@ -41,7 +41,7 @@ Utils::isRegularFile(const char *path)
 {
     struct stat sb;
 
-    if (path == NULL || path == '\0')
+    if (path == NULL || *path == '\0')
 	return false;
 
     return (stat(path, &sb) == 0 && (sb.st_mode & S_IFMT) == S_IFREG);
